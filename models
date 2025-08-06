@@ -1,0 +1,4 @@
+#main.py运行成功后，这里面会自动生成3个机器学习样本，分别为：
+#face_recognition_best.h5
+#face_recognition_model.h5
+#label_map.npy
