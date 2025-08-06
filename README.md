@@ -1,5 +1,6 @@
 # deep-face-recognition
 # 人脸识别系统
+主程序入口main.py
 
 基于OpenCV和TensorFlow的人脸识别系统，提供完整的人脸采集、模型训练和识别功能，支持图片识别和实时摄像头识别。
 
