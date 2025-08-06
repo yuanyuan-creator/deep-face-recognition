@@ -112,3 +112,16 @@ deep-face-recognition
 ​解决方法​：将下载的文件放入项目根目录
 ```bash
 wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml
+
+
+###程序软件环境
+PyCharm Community Edition 2024.3.3
+下载地址：https://www.jetbrains.com/zh-cn/pycharm/#，找到download即可
+或：https://www.jetbrains.com/pycharm/download/?section=windows
+
+###安装教程（参考知乎大神）：
+https://zhuanlan.zhihu.com/p/24884367657
+
+
+
+
