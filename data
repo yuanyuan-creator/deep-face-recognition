@@ -1,0 +1,9 @@
+请自己手动在此文件夹内部建立源照片文件夹，将其命名为raw_images；
+然后在此文件夹的子目录建立至少2个（>=2都可）文件夹用于存放人脸照片，进行人脸识别学习。例如：person1和person2，将其并列存放于根目录data下
+  data/raw_images/
+    ├── 张三/
+    │   ├── photo1.jpg
+    │   └── photo2.png
+    └── 李四/
+        ├── image1.jpeg
+        └── image2.jpg
