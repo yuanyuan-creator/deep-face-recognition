@@ -1,3 +1,16 @@
+# train_model.py
+"""
+功能：模型训练模块
+作用：使用采集的人脸样本训练识别模型
+关联：
+  - 被main.py的选项2调用
+  - 处理capture_faces.py采集的样本
+  - 生成模型文件供recognize.py和realtime_recognition.py使用
+  - 调用utils.py的目录创建和训练历史绘制函数
+  - 输出模型到models目录，报告到output目录
+"""
+
+
 import os
 import numpy as np
 import tensorflow as tf
