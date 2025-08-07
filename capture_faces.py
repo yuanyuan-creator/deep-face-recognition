@@ -1,3 +1,14 @@
+# capture_faces.py
+"""
+功能：人脸样本采集模块
+作用：从原始图像中提取人脸区域并保存为训练样本
+关联：
+  - 被main.py的选项1调用
+  - 使用utils.py中的目录创建和检测器函数
+  - 输出保存到data/known_faces供train_model.py使用
+"""
+
+
 import os
 import glob
 import cv2
