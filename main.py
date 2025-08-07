@@ -1,3 +1,17 @@
+# main.py
+"""
+功能：系统主入口模块
+作用：提供命令行菜单界面，协调各功能模块的执行
+关联：
+  - 作为程序入口点调用其他所有模块
+  - 调用capture_faces.py采集样本
+  - 调用train_model.py训练模型
+  - 调用recognize.py处理单张图片
+  - 调用realtime_recognition.py进行实时识别
+  - 依赖utils.py的依赖检查和目录创建
+"""
+
+
 import os
 import sys
 from utils import check_and_install_dependencies, create_directory
