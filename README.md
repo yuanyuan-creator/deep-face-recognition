@@ -23,7 +23,7 @@
 
 ### 1. 克隆仓库
 ```bash
-git clone https://github.com/your-repo/face-recognition-system.git
+git clone [https://github.com/yuanyuan-creator/deep-face-recognition.git]
 cd face-recognition-system
 
 ### 2. 安装依赖
@@ -85,19 +85,43 @@ deep-face-recognition
 
 
 
+***=====系统模块关系图=====***
+main.py (主控中心)
+│
+├── capture_faces.py (样本采集) → data/known_faces
+│
+├── train_model.py (模型训练) → models/face_recognition_model.h5
+│                             models/label_map.npy
+│
+├── recognize.py (图片识别) ← 模型文件
+│      ↓
+│     output/
+│
+└── realtime_recognition.py (实时识别) ← 模型文件
+       ↓
+      摄像头输出
+      
+↘ utils.py (共享工具)
+
+
+
+
 ***=====注 意 事 项=====***
 ​样本要求​：
 每个人员至少需要20张人脸样本才能有效训练
 确保原始图片光线充足、人脸清晰
 建议使用不同角度和表情的照片
+
 ​硬件要求​：
 训练阶段推荐使用支持CUDA的GPU
 实时识别需要摄像头支持
 内存建议8GB以上
+
 ​首次运行​：
 系统会自动检测并安装缺失依赖
 确保网络连接正常以下载必要组件
 安装完成后需要重启程序
+
 常见问题
 1.训练时报错"目录为空"
 ​原因​：尚未采集人脸样本或数据目录不存在
@@ -109,7 +133,9 @@ deep-face-recognition
 
 2.无法加载人脸检测器
 ​原因​：缺少OpenCV的Haar级联文件
-​解决方法​：将下载的文件放入项目根目录
+​解决方法​：
+
+将下载的文件放入项目根目录
 ```bash
 wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml
 
