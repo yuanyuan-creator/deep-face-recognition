@@ -1,3 +1,15 @@
+# realtime_recognition.py
+"""
+功能：实时人脸识别模块
+作用：通过摄像头实时检测并识别人脸
+关联：
+  - 被main.py的选项4调用
+  - 加载train_model.py生成的模型和标签映射
+  - 使用utils.py的人脸检测器和绘制函数
+  - 与train_model.py共享IMG_SIZE参数
+"""
+
+
 import cv2
 import numpy as np
 import tensorflow as tf
