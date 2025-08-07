@@ -1,3 +1,16 @@
+# recognize.py
+"""
+功能：单张图片识别模块
+作用：对输入图片进行人脸检测和识别
+关联：
+  - 被main.py的选项3调用
+  - 加载train_model.py生成的模型和标签映射
+  - 使用utils.py的人脸检测器和绘制函数
+  - 与train_model.py共享IMG_SIZE参数
+  - 结果保存到output目录
+"""
+
+
 import os
 import cv2
 import numpy as np
