@@ -149,5 +149,17 @@ PyCharm Community Edition 2024.3.3
 https://zhuanlan.zhihu.com/p/24884367657
 
 
+###更新修改的内容：
+解决了人脸识别系统窗口出现乱码的问题
+具体改进点：
+1.realtime_recogintion.py的窗口显示乱码修改如下：
+# 显示画面（约第72行）
+        cv2.imshow('Face Recognition - Real Time', display_frame)
+
+2.recognize.py的窗口显示乱码修改如下：
+ # 显示结果（约第83行）
+    cv2.imshow('Recognition Result', result_frame)
+
+
 
 
