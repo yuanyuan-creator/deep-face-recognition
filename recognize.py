@@ -1,4 +1,3 @@
-# recognize.py
 """
 功能：单张图片识别模块
 作用：对输入图片进行人脸检测和识别
@@ -9,7 +8,6 @@
   - 与train_model.py共享IMG_SIZE参数
   - 结果保存到output目录
 """
-
 
 import os
 import cv2
@@ -83,6 +81,6 @@ def recognize_image(image_path):
     print(f"结果已保存: {output_path}")
 
     # 显示结果
-    cv2.imshow('识别结果', result_frame)
+    cv2.imshow('Recognition Result', result_frame)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
