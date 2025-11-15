@@ -1,4 +1,3 @@
-# realtime_recognition.py
 """
 功能：实时人脸识别模块
 作用：通过摄像头实时检测并识别人脸
@@ -8,7 +7,6 @@
   - 使用utils.py的人脸检测器和绘制函数
   - 与train_model.py共享IMG_SIZE参数
 """
-
 
 import cv2
 import numpy as np
@@ -70,7 +68,7 @@ def realtime_recognition():
             draw_prediction(display_frame, x, y, w, h, f"{name} {confidence:.1f}%")
 
         # 显示画面
-        cv2.imshow('人脸识别 - 实时模式', display_frame)
+        cv2.imshow('Face Recognition - Real Time', display_frame)
 
         # 检测退出键 (ESC)
         key = cv2.waitKey(1)
